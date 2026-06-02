@@ -12,11 +12,13 @@ body {
     min-height: 100vh;
 }
 
-.left-content {
+.left-content, .logo {
     display: flex; 
-    flex-direction: column; 
     justify-content: center;
     align-items: center;
+}
+
+.left-content {
     flex: 1;
     position: relative;
 
@@ -26,30 +28,28 @@ body {
 }
 
 .logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
-    height: 20vh;
-
+    height: 20%;
     font-family: Norse, sans-serif;
-    font-size: clamp(1.5rem, 3vw + 1rem, 5rem); 
     color: white;
+    margin-bottom: 200px;
+}
+
+.logo > p {
+    font-size: 5em;
 }
 
 .logo > img {
-    width: 10vh;
+    height: 8rem;
+    width: auto;
 }
 
 .credit {
     position: absolute; 
     bottom: 0; 
-    width: 100%; 
     text-align: center; 
-    padding: 10px 0;
     color: white;
 }
 
